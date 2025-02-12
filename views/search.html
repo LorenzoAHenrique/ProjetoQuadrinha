@@ -8,20 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Resultados da Busca</h1>
+        <h1>Busca de Quadras</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/search">Buscar Quadras</a>
-            <a href="/register">Cadastre-se</a>
+            <a href="/views/index.html">Home</a>
+            <a href="/views/search.html">Buscar Quadras</a>
+            <a href="/views/register.html">Cadastre-se</a>
         </nav>
     </header>
-    <main>
         <section id="results">
+            <main>
+                <section>
+                    <h2>Encontre quadras perto de você!</h2>
+                    <form action="/search" method="GET">
+                        <input type="text" name="location" placeholder="Digite sua cidade" required>
+                        <input type="date" name="date" required>
+                        <button type="submit" formaction="/views/search.html">Buscar</button>
+                    </form>
+                    </form>
+                </section>
+            </main>
             <!-- Resultados da busca serão carregados aqui -->
         </section>
-    </main>
     <footer>
-        <p>&copy; 2023 Quadras Amadoras</p>
+        <p>&copy; 2025 Quadras Amadoras</p>
     </footer>
     <script src="/js/search.js"></script>
 </body>
