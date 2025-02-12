@@ -135,7 +135,10 @@ footer p {
 
 .register-container {
     background-color: #fff;
-    padding: 20px;
+    width: 700px;
+    align-items: center;
+    margin: 20px auto;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -147,7 +150,7 @@ footer p {
 .register-container input[type="text"],
 .register-container input[type="email"],
 .register-container input[type="password"] {
-    width: 100%;
+    width:  calc(100% - 50px);
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -155,7 +158,7 @@ footer p {
 }
 
 .register-container button {
-    width: 100%;
+    width:  calc(100% - 50px);
     padding: 10px;
     background-color: #009C3B; /* Verde para o botão */
     border: none;
