@@ -5,19 +5,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2D8E6C; /* Green field color */
-    background-image: linear-gradient(to bottom, #9aad55, #7a8c3a); /* Gradiente para simular o campo de futebol */
+    background-color: #009C3B; /* Verde da bandeira do Brasil */
+    background-image: linear-gradient(to bottom, #009C3B, #FFD700); /* Gradiente verde e amarelo */
     color: #333; /* Darker text color for better readability */
     line-height: 1.6;
 }
 
 header {
-    background-color: #4c8527; /* Darker green for header */
-    background-image: linear-gradient(to bottom, #4c8527, #3a6a1f); /* Gradiente para dar profundidade */
-    color: #fcecc4; /* Light color for text */
+    background-color: #002776; /* Azul da bandeira do Brasil */
+    background-image: linear-gradient(to bottom, #002776, #001F5B); /* Gradiente para dar profundidade */
+    color: #FFD700; /* Amarelo da bandeira do Brasil */
     padding: 20px 0;
     text-align: center;
-    border-bottom: 5px solid #D1CD52; /* Add a border to the bottom of the header */
+    border-bottom: 5px solid #FFD700; /* Add a border to the bottom of the header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     font-family: 'Open Sans', sans-serif;
 }
@@ -30,7 +30,7 @@ header h1 {
 }
 
 nav a {
-    color: #ccbc94; /* Light color for links */
+    color: #FFD700; /* Amarelo para links */
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold; /* Bold for emphasis */
@@ -45,34 +45,34 @@ nav a:hover {
 
 main {
     padding: 20px;
-    background-color: #61A363; /* Green background for main content */
-    border: 2px dashed #098171; /* Dashed border for main content */
+    background-color: #009C3B; /* Verde para o conteúdo principal */
+    border: 2px dashed #FFD700; /* Borda amarela */
     border-radius: 10px; /* Rounded corners for main content */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     margin: 20px auto;
-    max-width: 1200px; /* Limit the width for better readability */
+    max-width: 1100px; /* Limit the width for better readability */
     background-image: url('../images/grass-texture.jpg'); /* Grass texture for the background */
     background-blend-mode: overlay; /* Blend the texture with the background */
     color: #ffffff; /* Change font color */
 }
 
 main h2 {
-    color: #ffff; /* Cor do título principal */
+    color: #ffffff; /* Cor do título principal */
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
 }
 
 footer {
-    background-color: #4c8527; /* Darker green for footer */
-    background-image: linear-gradient(to bottom, #4c8527, #3a6a1f); /* Gradiente para combinar com o header */
-    color: #fcecc4; /* Light color for text */
+    background-color: #002776; /* Azul para o rodapé */
+    background-image: linear-gradient(to bottom, #002776, #001F5B); /* Gradiente para combinar com o header */
+    color: #FFD700; /* Amarelo para o texto */
     text-align: center;
     padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-    border-top: 2px solid #ccbc94; /* Add a border to the top of the footer */
+    border-top: 2px solid #FFD700; /* Add a border to the top of the footer */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
     font-size: 0.9rem;
 }
@@ -83,8 +83,8 @@ footer p {
 
 /* Estilos para botões temáticos */
 .button {
-    background-color: #4c8527;
-    color: #fcecc4;
+    background-color: #002776; /* Azul para botões */
+    color: #FFD700; /* Amarelo para o texto */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -94,13 +94,13 @@ footer p {
 }
 
 .button:hover {
-    background-color: #3a6a1f;
+    background-color: #001F5B; /* Azul mais escuro ao passar o mouse */
 }
 
 /* Estilos para cards de conteúdo */
 .card {
     background-color: #ffffff;
-    border: 1px solid #ccbc94;
+    border: 1px solid #FFD700; /* Borda amarela */
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
@@ -131,4 +131,40 @@ footer p {
     main h2 {
         font-size: 1.5rem;
     }
+}
+
+.register-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #009C3B; /* Verde para o botão */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-container button:hover {
+    background-color: #007A2F; /* Verde mais escuro ao passar o mouse */
 }
