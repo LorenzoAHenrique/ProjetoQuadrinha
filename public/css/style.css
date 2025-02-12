@@ -1,0 +1,134 @@
+/* Importando uma fonte personalizada do Google Fonts para um visual mais moderno */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2D8E6C; /* Green field color */
+    background-image: linear-gradient(to bottom, #9aad55, #7a8c3a); /* Gradiente para simular o campo de futebol */
+    color: #333; /* Darker text color for better readability */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4c8527; /* Darker green for header */
+    background-image: linear-gradient(to bottom, #4c8527, #3a6a1f); /* Gradiente para dar profundidade */
+    color: #fcecc4; /* Light color for text */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #D1CD52; /* Add a border to the bottom of the header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no texto para destacar */
+}
+
+nav a {
+    color: #ccbc94; /* Light color for links */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffffff; /* Change color on hover */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+    background-color: #61A363; /* Green background for main content */
+    border: 2px dashed #098171; /* Dashed border for main content */
+    border-radius: 10px; /* Rounded corners for main content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin: 20px auto;
+    max-width: 1200px; /* Limit the width for better readability */
+    background-image: url('../images/grass-texture.jpg'); /* Grass texture for the background */
+    background-blend-mode: overlay; /* Blend the texture with the background */
+    color: #ffffff; /* Change font color */
+}
+
+main h2 {
+    color: #ffff; /* Cor do título principal */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4c8527; /* Darker green for footer */
+    background-image: linear-gradient(to bottom, #4c8527, #3a6a1f); /* Gradiente para combinar com o header */
+    color: #fcecc4; /* Light color for text */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: 2px solid #ccbc94; /* Add a border to the top of the footer */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para botões temáticos */
+.button {
+    background-color: #4c8527;
+    color: #fcecc4;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #3a6a1f;
+}
+
+/* Estilos para cards de conteúdo */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccbc94;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
+}
